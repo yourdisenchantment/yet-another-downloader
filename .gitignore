@@ -1,0 +1,11 @@
+.idea/*
+.idea/
+.idea
+
+.venv/*
+.venv/
+.venv
+
+tests/output/*
+tests/output/
+tests/output
