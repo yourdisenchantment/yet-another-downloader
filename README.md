@@ -1,4 +1,4 @@
-# Stealth Image Downloader
+# Yet Another Downloader
 
 Библиотека для надёжной загрузки изображений с различных веб-ресурсов, включая сайты с защитой от ботов.
 
@@ -15,11 +15,11 @@
 
 ```bash
 # Установка из PyPI
-pip install yet_another_downloader
+pip install yet-another-downloader
 
 # Установка из исходного кода
 git clone https://github.com/yourdisenchantment/yet-another-downloader.git
-cd stealth-image-downloader
+cd yet-another-downloader
 poetry install
 ```
 
