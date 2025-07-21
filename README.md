@@ -15,10 +15,10 @@
 
 ```bash
 # Установка из PyPI
-pip install stealth-image-downloader
+pip install yet_another_downloader
 
 # Установка из исходного кода
-git clone https://github.com/yourdisenchantment/stealth-image-downloader.git
+git clone https://github.com/yourdisenchantment/yet-another-downloader.git
 cd stealth-image-downloader
 poetry install
 ```
