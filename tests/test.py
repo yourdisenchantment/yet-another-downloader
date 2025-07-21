@@ -2,11 +2,15 @@
 
 import os
 
-from app.main import download_image
+from src.yet_another_downloader.main import downloader
 
 
 def test_multiple_downloads():
-    """...
+    """Тестирует загрузку нескольких изображений из разных источников.
+
+    Функция пытается загрузить тестовый набор изображений с различных хостингов, используя разные форматы URL (с протоколом и без). Сохраняет загруженные изображения в директорию 'output' с последовательной нумерацией.
+
+    В случае успешной загрузки каждое изображение сохраняется как 'image_N.jpg', где N - порядковый номер изображения. При возникновении ошибок выводит соответствующее сообщение, но продолжает загрузку остальных изображений.
 
     :return:
     :rtype:
@@ -24,7 +28,7 @@ def test_multiple_downloads():
 
     for i, url in enumerate(test_urls):
         try:
-            image_data = download_image(url)
+            image_data = downloader(url)
             output_path = os.path.join(output_dir, f"image_{i + 1}.jpg")
 
             with open(output_path, "wb") as file:
